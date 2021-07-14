@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" onchange="upload(this)" />  
+    <div id="container" style="width:800px;height:600px;border:1px solid grey"></div>
+ 
+    <script src="monaco-editor-0.25.2/package/min/vs/loader.js"></script>
+    <script>
+     var textValue =  [
+                'function x() {',
+                '\tconsole.log("Hello world!");',
+                '}'
+            
+            ].join('\n');  //初始模板
+
+     function edit(){
+        require.config({ paths: { 'vs': 'monaco-editor-0.25.2/package/min/vs' }});
+        require(['vs/editor/editor.main'], function() {
+        var editor = monaco.editor.create(document.getElementById('container'), {
+            value:textValue,
+            language: 'javascript'
+        });
+    });
+   }
+
+//    edit();
+
+    function upload(input) {  
+            //支持chrome IE10  
+            if (window.FileReader) {  
+                var file = input.files[0];  
+                filename = file.name.split(".")[0];  
+                var reader = new FileReader();  
+                reader.onload = function() {  
+                    console.log(this.result);  
+                    textValue = this.result  //给编辑器赋值
+                    edit()
+                }  
+                reader.readAsText(file);  
+            }   
+      
+        } 
+
+        
+
+    </script>
+
+</body>
+</html>
