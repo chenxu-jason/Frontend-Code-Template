@@ -1,0 +1,29 @@
+{
+  "name": "qiankn",
+  "version": "1.0.0",
+  "description": "微前端qiankun Demo",
+  "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "serve": "npm-run-all --parallel serve:*",
+    "build": "npm-run-all --parallel build:*",
+    "install:main": "cd main && npm i",
+    "install:sub": "cd sub && npm i",
+    "serve:main": "cd main && npm run serve",
+    "serve:sub": "cd sub && npm run serve",
+    "build:main": "cd main && npm run build",
+    "build:sub": "cd sub && npm run build",
+    "docker": "npm run docker-build && npm run docker-run",
+    "docker-build": "npm run install && npm run build && docker build -t qiankun .",
+    "docker-run": "docker container stop qiankun_container && docker container rm qiankun_container && docker run -d -it -p 7777:7777 -p 7778:7778 --name qiankun_container qiankun"
+  },
+  "keywords": [
+    "qiankun",
+    "vue",
+    "single-spa"
+  ],
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "author": "",
+  "license": "ISC"
+}
