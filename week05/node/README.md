@@ -2,7 +2,7 @@
 ## COMMAND
 
 ```bash
-# yarn or npm
+# npm
 $ npm start
 $ npm stop
 ```
