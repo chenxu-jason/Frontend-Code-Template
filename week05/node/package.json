@@ -1,0 +1,19 @@
+{
+  "name": "graceful-shutdown-example",
+  "version": "1.0.0",
+  "description": "graceful shutdown of nodejs workers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node master.js",
+    "stop": "node stop.js master.js"
+  },
+  "keywords": [
+    "nodejs",
+    "graceful",
+    "shutdown",
+    "cluster",
+    "worker",
+    "fork"
+  ],
+  "dependencies": {}
+}
