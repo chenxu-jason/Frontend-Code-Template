@@ -1,5 +1,9 @@
-cd demo01
-npm i 
-npm start
+### 只做了mysql
 
-只做了mysql
+#### cd demo01
+
+#### npm i 
+
+#### npm start
+
+# 
