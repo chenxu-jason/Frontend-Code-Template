@@ -1,17 +1,8 @@
-<p align="center">
-    <a href="http://www.form-create.com">
-        <img width="200" src="http://file.lotkk.com/form-create.png">
-    </a>
-</p>
 
 
-# form-create
 
-[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/xaboy/form-create)
-[![github](https://img.shields.io/badge/Author-xaboy-blue.svg)](https://github.com/xaboy)
-[![document](https://img.shields.io/badge/Doc-welcome-red.svg)](http://www.form-create.com/en/v2/)
 
-**form-create is a form generation component that can generate dynamic rendering, data collection, verification and submission functions through JSON. Supports 3 UI frameworks, and supports the generation of any Vue components. Built-in 20 kinds of commonly used form components and custom components, no matter how complex forms can be easily handled.**
+
 
 **Adapting to vue3 version**
 
@@ -247,20 +238,9 @@ ant-design-vue Demo
 $ npm run dev:antd
 ```
 
-## Thank
+## 
 
-[时光弧线](https://github.com/shiguanghuxian)  |  [wxxtqk](https://github.com/wxxtqk)  |  [williamBoss](https://github.com/williamBoss)  |  [HeyMrLin](https://github.com/HeyMrLin)  |  [djkloop](https://github.com/djkloop) | [JetBrains](https://www.jetbrains.com/?from=form-create)
 
-## Donation
 
-![donation.jpg](http://form-create.com/img/donation.jpg)
+##### 
 
-## Contact
-
-##### email : xaboy2005@qq.com
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
-
-Copyright (c) 2018-present xaboy
